@@ -1,0 +1,56 @@
+# Never commit game-derived material (see LBP_MAC_PORT_PLAN.md, ground rule 1).
+# Game files, decrypted executables, firmware, keys and assets.
+*.ELF
+*.elf
+*.self
+*.SELF
+*.sprx
+*.SPRX
+*.prx
+*.PRX
+*.pkg
+*.PKG
+*.edat
+*.EDAT
+*.sdat
+*.SDAT
+*.rap
+*.RAP
+*.PUP
+*.SFO
+*.sfo
+*.bin
+*.iso
+game/
+vfs/
+dev_hdd0/
+dev_flash/
+PS3_GAME/
+USRDIR/
+rpcs3-logs/
+*.log
+
+# Lifted output (derived from Sony's code).
+out/
+lifted/
+generated/
+ppu_recomp*.c
+ppu_recomp*.cpp
+ppu_hle_nids.cpp
+spu_*_lifted*.c
+spu_*_lifted*.cpp
+*_funcs.json
+*_imports.json
+
+# Build trees and caches.
+build/
+build-*/
+cmake-build-*/
+.ccache/
+.venv/
+__pycache__/
+*.pyc
+
+# macOS.
+.DS_Store
+*.dSYM/
